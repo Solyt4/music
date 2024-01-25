@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>version beta</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <section class="conteiner">
+    <div class="wrapper">
+      <ul class="slide"></ul>
+    </div>
+  </section>
+  <section class="music-bar">
+    <div class="wrapper">
+      <ul class="slide"></ul>
+    </div>
+
+    <div class="music-conteiner">
+      <div class="conteiner-bar">
+        <div class="bar"></div>
+      </div>
+      <audio id="main-audio" src=""></audio>
+      <div class="grid-ajust">
+        <div class="gap flex-center">
+          <div class="music-img"></div>
+          <div class="music-info">
+            <p class="music-nam"></p>
+            <p class="music-art"></p>
+          </div>
+        </div>
+        <div class="controls flex-center">
+          <span class="shuffle pp material-symbols-rounded">
+            shuffle
+          </span>
+          <span class="prev material-symbols-rounded">
+            skip_previous
+          </span>
+          <span class="pause material-symbols-rounded">
+            play_arrow
+          </span>
+          <span class="next material-symbols-rounded">
+            skip_next
+          </span>
+          <span class="refresh pp material-symbols-rounded">
+            repeat
+          </span>
+        </div>
+        <div class="controls-music flex-center">
+          <div>
+            <span class="temp-min">00:00</span>
+            <span class="temp-max" style="color: #aaa;"> 0:00</span>
+          </div>
+          <div class="controns-vol flex-center">
+            <span class="volume-inco material-symbols-rounded">
+              volume_up
+            </span>
+
+            <div class="range">
+              <div class="range-content">
+                <div class="range-slider">
+                  <div class="range-slider-line" id="range-line"></div>
+                </div>
+                <div class="range-thumb" id="range-thumb">
+                  <div class="range-value">
+                    <span class="range-value-number" id="range-number">0</span>
+                  </div>
+                </div>
+                <input type="range" class="range-input" id="range-input" min="0" max="100" value="100" step="1">
+              </div>
+            </div>
+
+          </div>
+<!--           <span class="screen material-symbols-rounded">
+            fullscreen
+          </span> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/musics-lists.js"></script>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
